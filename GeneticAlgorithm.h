@@ -8,9 +8,9 @@
 class GeneticAlgorithm
 {
 public:
-	double rank, x, y, z;
+	double rank, x, y, z; // rank and function parameters 
 	void compute_fitness(double& desired_outcome); 
-	std::vector<GeneticAlgorithm> generateInitialPop( int solutions_number = 1000000, int distribution_width = 100);
+	std::vector<GeneticAlgorithm> generateInitialPop(int solutions_number = 1000000, int distribution_width = 100);
 	void mutate(std::vector<GeneticAlgorithm>& samples, double mutation_procent = 0.01);
 	std::vector<GeneticAlgorithm> cross_over(std::vector<GeneticAlgorithm>& samples, const int& sample_size, unsigned int solutions_number = 1000000);
 };

@@ -48,6 +48,7 @@ std::vector<GeneticAlgorithm> GeneticAlgorithm::cross_over(std::vector<GeneticAl
 	std::uniform_int_distribution<int> cross(0, sample_size - 1);
 	std::vector<GeneticAlgorithm> solutions{};
 
+	// take random x,y,z from every solution in samples and create new population
 	for (int i = 0; i < solutions_number; i++)
 	{
 		solutions.emplace_back(GeneticAlgorithm{
