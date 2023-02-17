@@ -1,5 +1,5 @@
 # Genetic Algoryithm
-This project is simple implementation of Genetic Algorithm in C++. Assume we have some mathematical function f(x,y,z,...) thath describes some process and we know the outcome of that function but we want to know parameters x,y,z. We can use Genetic Algorithm to find those parameters. 
+This project is simple implementation of Genetic Algorithm in C++. Assume we have some mathematical function f(x,y,z,...) that describes some process and we know the outcome of that function but we want to know parameters x,y,z. We can use Genetic Algorithm to find those parameters. 
 GeneticAlgorithm.cpp contains GenetricAlgorithm class, main.cpp contains algorithm implementation and tools.cpp contains functions i used in main e.g function for printing results. If you want to change function you have to change it in compute_fitness function and error function. 
 
 ## How does Genetic Algorithm works? 
