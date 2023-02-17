@@ -33,10 +33,12 @@ inline void error(const GeneticAlgorithm& solution1, double outcome)
 
 int main()
 {
+	GeneticAlgorithm GA;
+
 	// Create initial random guesses
 	std::vector<GeneticAlgorithm> solutions;
-	GeneticAlgorithm GA;
-	solutions = GA.generateInitialPop();
+	solutions.reserve(1000000);
+	solutions = GA.generateInitialPop(1000000, 100);
 	
 	// Ask for what outcome from f(x,y,...) are we looking for
 	double desired_outcome{};
@@ -48,7 +50,6 @@ int main()
 
 	while (true)
 	{ 
-
 		// Compute fitness of initial (and every next) population 
 		for (auto& solution : solutions)
 		{
@@ -65,6 +66,8 @@ int main()
 		//take top n solutions
 		const int sample_size = 1000;
 		std::vector<GeneticAlgorithm> samples;
+		samples.reserve(sample_size); 
+
 		std::copy(solutions.begin(), solutions.begin()+sample_size, std::back_inserter(samples));
 
 		solutions.clear(); 
