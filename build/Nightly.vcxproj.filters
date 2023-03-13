@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Maciek\Desktop\dev_workspace\Projects\GeneticAlgorithm\build\CMakeFiles\d1aadac12ecdb0638200072099258944\Nightly.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Maciek\Desktop\dev_workspace\Projects\GeneticAlgorithm\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Maciek\Desktop\dev_workspace\Projects\GeneticAlgorithm\build\CMakeFiles\Nightly" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F51B57A5-5CD9-31D8-9965-FB2058EE4538}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

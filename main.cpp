@@ -46,7 +46,6 @@ int main()
 	std::cin >> desired_outcome;
 	std::cout << "\n"; 
 	
-	double rank = 0; 
 
 	while (true)
 	{ 
