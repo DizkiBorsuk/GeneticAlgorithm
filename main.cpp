@@ -3,6 +3,7 @@
 #include <vector>
 #include <algorithm>
 #include <math.h>
+#include <execution>
 
 #include "GeneticAlgorithm.h"
 
@@ -18,7 +19,6 @@
 /// Compute fitness
 // UNTIL population has converged
 // STOP
-
 
 inline void error(const GeneticAlgorithm& solution1, double outcome)
  {
@@ -56,10 +56,10 @@ int main()
 		}
 
 		// sort solutions based on rank, higher rank -> better
-		std::sort(solutions.begin(), solutions.end(), compareRank); 
+		std::sort(std::execution::par,solutions.begin(), solutions.end(), compareRank); 
 	
 		// Print top m solutions (10) and show error for the solution with the highest rank
-		printSol(solutions, 10); 
+		printSol(solutions, 5); 
 		error(solutions.front(), desired_outcome); 
 
 		//take top n solutions
